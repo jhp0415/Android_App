@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--행사 배너-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/UserThemaColorGreen">
+            <TextView
+                android:id="@+id/textVIew_EventMap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="지도보러 가기"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:onClick="EvnetMap_onClick"/>
+
+        </LinearLayout>
+        <!--첫번째 행사 : 공연행사 배치 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_event1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="● 공연행사"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/UserTextColor"
+                android:gravity="center_vertical"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!--첫번째 행사 세 분류로 나눠서 배치 -->
+        <HorizontalScrollView
+            android:id="@+id/scrollview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/scrollview_img1"
+                        android:src="@drawable/child"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="ImageonClick"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/scrollview_img2"
+                        android:src="@drawable/teen"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="ImageonClick"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/scrollview_img3"
+                        android:src="@drawable/adult"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="ImageonClick"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!--두번째 행사 : 체험행사 배치 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_event2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/UserTextColor"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="● 체험행사"/>
+        </LinearLayout>
+
+        <!--두번째 행사 세 분류로 나눠서 배치-->
+        <HorizontalScrollView
+            android:id="@+id/scrollview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/scrollview_img4"
+                        android:src="@drawable/child"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="ImageonClick"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/scrollview_img5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/teen"
+                        android:onClick="ImageonClick"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/scrollview_img6"
+                        android:src="@drawable/adult"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="ImageonClick"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!--세번째 행사 : 사전행사 배치 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_event3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/UserTextColor"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="● 사전행사"/>
+        </LinearLayout>
+
+        <!--세번째 행사 두 분류로 나눠서 배치-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_event3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/d100" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_event3_2"
+                    android:src="@drawable/d30"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--네번째 행사 : 공식행사 배치 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_event4"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/UserTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="● 공식행사"/>
+        </LinearLayout>
+
+        <!--네번째 행사 세 분류로 나눠서 배치 -->
+        <HorizontalScrollView
+            android:id="@+id/scrollview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/scrollview_img7"
+                        android:src="@drawable/open"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="ImageonClick"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/scrollview_img8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="ImageonClick"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/opening" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/scrollview_img9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/close"
+                        android:onClick="ImageonClick"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!--다섯번째 행사 : 특별행사 배치 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_event5"
+                android:gravity="center_vertical"
+                android:textColor="@color/UserTextColor"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="● 특별행사"/>
+        </LinearLayout>
+
+        <!-- 다섯번째 행사 두 분류로 나눠서 배치 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_event5_1"
+                    android:src="@drawable/healing"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="ImageonClick"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_event5_2"
+                    android:src="@drawable/asia_therapy"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="ImageonClick"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

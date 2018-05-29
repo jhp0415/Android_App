@@ -1,0 +1,176 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/UserThemaColorGreen">
+            <TextView
+                android:id="@+id/textVIew_Day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="티켓예매하러 가기"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:onClick="Ticket_onClick"/>
+        </LinearLayout>
+
+        <!--티켓가격 타이틀 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="● 일반 예매"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/UserTextColor"/>
+        </LinearLayout>
+
+        <!--티켓 가격 이미지 -->
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="360dp">
+
+            <ImageView
+                android:id="@+id/img_ticket_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ticket_chart1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></LinearLayout>
+
+        <!--티켓 적용범위 타이틀-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="● 단체 예매"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/UserTextColor"/>
+        </LinearLayout>
+        <!--티켓 적용범위 이미지-->
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="165dp">
+
+            <ImageView
+                android:id="@+id/img_ticket_range"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/ticket_chart2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></LinearLayout>
+        <!--연계할인 타이틀-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="● 연계 할인"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/UserTextColor" />
+        </LinearLayout>
+        <!--연계할인 이미지-->
+        <LinearLayout
+            android:layout_below="@id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="2500dp"
+            android:weightSum="5.5"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_ticket_sale"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/lodging1" />
+
+            <ImageView
+                android:id="@+id/img_ticket_sale1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/lodging2" />
+
+            <ImageView
+                android:id="@+id/img_ticket_sale2"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/lodging3" />
+
+            <ImageView
+                android:id="@+id/img_ticket_sale3"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/lodging4" />
+
+            <ImageView
+                android:id="@+id/img_ticket_sale4"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/lodging5" />
+
+            <ImageView
+                android:id="@+id/img_ticket_sale5"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/warning" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

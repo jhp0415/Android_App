@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    //단색으로 채울 때
+    <!--<solid android:color="@color/UserThemaColorGreen"/>-->
+
+
+    //shape 요소 내 사용하는 뷰의 패딩값
+    <padding
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp"/>
+
+    //테두리나 선 그릴 때
+    <stroke
+        android:width="2dp"
+        android:color="@color/colorAccent"/>
+
+
+    //모서리 둥글게
+    <corners
+        android:radius="5dp"
+        />
+
+
+</shape>

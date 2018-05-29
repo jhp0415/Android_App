@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/home_white"
+            android:title="홈" />
+        <item
+            android:id="@+id/menu_ticket"
+            android:icon="@drawable/inclined_label"
+            android:title="티켓" />
+        <item
+            android:id="@+id/menu_event"
+            android:icon="@drawable/paper_plane"
+            android:title="행사">
+            <menu>
+                <item
+                    android:id="@+id/menu_event_1"
+                    android:icon="@drawable/filled_circle"
+                    android:title="사전행사" />
+                <item
+                    android:id="@+id/menu_event_2"
+                    android:icon="@drawable/filled_circle"
+                    android:title="공식행사" />
+                <item
+                    android:id="@+id/menu_event_3"
+                    android:icon="@drawable/filled_circle"
+                    android:title="특별행사" />
+                <item
+                    android:id="@+id/menu_event_4"
+                    android:icon="@drawable/filled_circle"
+                    android:title="공연행사" />
+                <item
+                    android:id="@+id/menu_event_5"
+                    android:icon="@drawable/filled_circle"
+                    android:title="체험행사" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/menu_route"
+            android:icon="@drawable/placeholder"
+            android:title="길" />
+        <item
+            android:id="@+id/menu_tour"
+            android:icon="@drawable/luggage"
+            android:title="관광" >
+            <menu>
+                <item
+                    android:id="@+id/menu_tour_1"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="관광지" />
+                <item
+                    android:id="@+id/menu_tour_2"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="숙박" />
+                <item
+                    android:id="@+id/menu_tour_3"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="맛집" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/menu_setting"
+            android:icon="@drawable/luggage"
+            android:title="서비스" >
+            <menu>
+                <item
+                    android:id="@+id/menu_setting_1"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="고객센터" />
+                <item
+                    android:id="@+id/menu_setting_2"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="홈페이지" />
+            </menu>
+        </item>
+
+
+    </group>
+</menu>
